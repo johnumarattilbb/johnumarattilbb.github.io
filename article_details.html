@@ -8,13 +8,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <title>Thinking in the Rain - Susan Orlean</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
         <div class="header-title">
             <h1>susan orlean</h1>
-            <p class="title-desc">always leaves room for jello.</p>
+            <p id="title-desc">always leaves room for jello.</p>
         </div>
     </header>
     <nav>
@@ -42,21 +41,6 @@
     <footer>
         Copyright © 2024 Susan Orlean
     </footer>
-    <script>
-        //variable declarations (step 1)//
-        var link=document.querySelector(".link");
-
-        //event listeners (step 3)//
-        link.addEventListener("mouseover",titleBlack);
-        link.addEventListener("mouseout",titleRed);
-
-        //function definitions (step 2)//
-        function titleBlack(){
-            this.style.color="#222";
-        }
-        function titleRed(){
-            this.style.color = "";
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>

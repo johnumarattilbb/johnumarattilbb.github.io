@@ -8,7 +8,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <title>Articles - Susan Orlean</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
@@ -49,30 +48,6 @@
     <footer>
         Copyright © 2024 Susan Orlean
     </footer>
-    <script>
-        //variable declarations (step 1)//
-        var header=document.querySelector("#title-desc");
-        var link=document.querySelector(".link");
-        var titles=document.querySelectorAll(".article-title");
-
-        //event listeners (step 3)//
-        link.addEventListener("mouseover",titleBlack);
-        link.addEventListener("mouseout",titleRed);
-        titles.forEach(function(title) {
-            title.addEventListener("mouseover", titleBlack);
-            title.addEventListener("mouseout", titleRed);
-        });
-
-        //function definitions (step 2)//
-        setTimeout(function() {
-            header.textContent = "lets it ride on red.";
-        }, 1000);
-        function titleBlack(){
-            this.style.color="#222";
-        }
-        function titleRed(){
-            this.style.color = "";
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
