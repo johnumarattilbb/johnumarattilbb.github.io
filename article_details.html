@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <title>Susan Orlean</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-title">
+            <h1>susan orlean</h1>
+            <p class="title-desc">always leaves room for jello.</p>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="books.html">BOOKS</a></li>
+            <li><a href="articles.html">ARTICLES</a></li>
+            <li><a href="events.html">EVENTS</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Thinking in the Rain</h2><br>
+        <p>by Susan Orlean</p>
+        <p>The New Yorker</p>
+        <p>February 11 & 18, 2008</p><br>
+        <para>
+            <p>The Steve Hollinger experience can be described most simply as multimedia. For one thing, it includes olfactory surprises. My apartment was right above Steve’s for several years, and on a regular basis he would call to warn me about odors that might waft their way from the second floor, where he lived, to my apartment on the third. Once in a while, the warning was about something he’d be cooking, but often it was more unexpected; he would call to say that he was going to be using turpentine, or linseed oil, or exotic solvents, or some kind of stinky paint, and wanted to make sure that the smell wouldn’t drive me crazy. Other calls were about surprising noises: “I’m going to be using a table saw to cut up some ammunition boxes, so I hope it’s not too loud,” or “I’m drilling through some chunks of cement, so let me know if it bothers you.”</p>
+            <p>One day last year, Hollinger walked around his neighborhood carrying another one of his surprises. The neighborhood is Fort Point Channel, a cluster of decommissioned factory buildings in downtown Boston which now house hundreds of artists, so it is commonplace to see residents kitted out in attire not sold at Talbots, carrying objects that appear extraterrestrial. Even so, Hollinger attracted attention. He had spent the previous month mostly locked in his apartment, furiously teaching himself the principles of aerodynamics, the physics of hydrology, and the basics of how to operate a Singer sewing machine, and he was at last testing what he had been working on — a reimagined, reinvented umbrella, with gutters and airfoils and the elegant drift of a bird’s wing. “I knew I was on to something,” he says now. “I was hardly outside for five minutes before someone stopped me and said, ‘Where can I get one of those?'”</p>
+            <p>Hollinger is not, per se, an umbrella man; he is a sculptor who makes assemblages out of found materials. They are often kinetic and frequently reference other media: a solar-powered flip-book movie of Hollinger doing a war dance, which you view through a prism in a large cement block, or perhaps a series of photo emulsions peeled off Polaroids showing trees being immolated in a nuclear test in the nineteen-sixties, or twenty-five atom-shaped spheres made of photo-sensitive tape, suspended between sheets of plate glass and a frame of barn wood. His sculpture has been displayed widely and is well respected, but it is his work as an inventor that pays most of his bills. He grew up in suburban Connecticut, but both his parents are artists, and bohemian enough to have found his unusual interests — breaking thermometers in order to add to his collection of mercury, for instance — the sign of a lively mind. He went on to study computer programming at Suny Albany. When he graduated, in 1984, he worked first at Telex, a computer company in north Carolina, and then at Wang Laboratories, in Massachusetts, developing imaging-technology software. In 1989, he decided to become an inventor.</p>
+        </para>
+        <p>Back to <a href="articles.html" class="link">the articles page</a>...</p>
+    </main>
+    <footer>
+        Copyright © 2024 Susan Orlean
+    </footer>
+    <script>
+        //variable declarations (step 1)//
+        var link=document.querySelector(".link");
+
+        //event listeners (step 3)//
+        link.addEventListener("mouseover",titleBlack);
+        link.addEventListener("mouseout",titleRed);
+
+        //function definitions (step 2)//
+        function titleBlack(){
+            this.style.color="#222";
+        }
+        function titleRed(){
+            this.style.color = "";
+        }
+    </script>
+</body>
+</html>

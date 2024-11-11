@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <title>Susan Orlean</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-title">
+            <h1>susan orlean</h1>
+            <p class="title-desc">always leaves room for jello.</p>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="books.html">BOOKS</a></li>
+            <li><a href="articles.html">ARTICLES</a></li>
+            <li><a href="events.html">EVENTS</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Articles</h2><br>
+        <p>This is a selection of articles I’ve written.<br>For more recent articles, visit <a href="https://www.newyorker.com/contributors/susan-orlean" class="link" target="_blank">my New Yorker contributor profile</a>.</p><br>
+        <article>
+            <h4 class="article-title"><a href="article_details.html" class="article-title">Thinking in the Rain</a></h4>
+            <p class="article-date">The New Yorker, February 11 & 18, 2008</p><br>
+            <p>The Steve Hollinger experience can be described most simply as multimedia. For one thing, it includes olfactory surprises. My apartment was right above Steve’s for several years, and on a regular basis he would call to warn me about odors that might waft their way from the second floor, where he lived, to my apartment on the third. Once in a while, the warning was about something he’d be cooking, but often it was more unexpected …</p>
+        </article>
+        <article>
+            <h4 class="article-title">The Origami Lab</h4>
+            <p class="article-date">The New Yorker, February 19, 2007</p><br>
+            <p>One of the few Americans to see action during the Bug Wars of the nineteen-nineties was Robert J. Lang, a lanky Californian who was on the front lines throughout, from the battle of the Kabutomushi Beetle to the battle of the Menacing Mantis and the battle of the Long-Legged Wasp. Most combatants in the Bug Wars — which were, in fact, origami contests — were members of the Origami Detectives, a group of artists in Japan who liked to try outdoing one another with extreme designs of assigned subjects …</p>
+        </article>
+        <article>
+            <h4 class="article-title">The Outsiders</h4>
+            <p class="article-date">The New Yorker, July 26, 2004</p><br>
+            <p>The Church of Saints Peter and Paul in South Boston has had its share of both bedevilment and blessings. A grand gray building, a pile of granite chunks pierced by Gothic arches and topped with a copper-clad bell tower, was erected in 1844 and dedicated with extravagant ceremony; four years later, it burned to the ground. After it was rebuilt, it was so popular that another parish had to be established nearby to handle the overflow …</p>
+        </article>
+    </main>
+    <footer>
+        Copyright © 2024 Susan Orlean
+    </footer>
+    <script>
+        //variable declarations (step 1)//
+        var link=document.querySelector(".link");
+        var titles=document.querySelectorAll(".article-title");
+
+        //event listeners (step 3)//
+        link.addEventListener("mouseover",titleBlack);
+        link.addEventListener("mouseout",titleRed);
+        titles.forEach(function(title) {
+            title.addEventListener("mouseover", titleBlack);
+            title.addEventListener("mouseout", titleRed);
+        });
+
+        //function definitions (step 2)//
+        function titleBlack(){
+            this.style.color="#222";
+        }
+        function titleRed(){
+            this.style.color = "";
+        }
+    </script>
+</body>
+</html>
