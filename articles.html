@@ -14,7 +14,7 @@
     <header>
         <div class="header-title">
             <h1>susan orlean</h1>
-            <p class="title-desc">always leaves room for jello.</p>
+            <p id="title-desc">always leaves room for jello.</p>
         </div>
     </header>
     <nav>
@@ -51,6 +51,7 @@
     </footer>
     <script>
         //variable declarations (step 1)//
+        var header=document.querySelector("#title-desc");
         var link=document.querySelector(".link");
         var titles=document.querySelectorAll(".article-title");
 
@@ -63,6 +64,9 @@
         });
 
         //function definitions (step 2)//
+        setTimeout(function() {
+            header.textContent = "lets it ride on red.";
+        }, 1000);
         function titleBlack(){
             this.style.color="#222";
         }

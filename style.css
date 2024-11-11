@@ -25,7 +25,7 @@ header {
     place-items: center;
 }
 
-.title-desc {
+#title-desc {
     color: antiquewhite;
     text-align: center;
 }
