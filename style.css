@@ -132,3 +132,51 @@ footer {
 para p {
     margin-bottom: 30px;
 }
+/*here is the about me page coding!!!!!!!!!!! Start!!!!!!!*/
+.me-content{
+    font-size: 0.8em;
+    line-height: 1.6;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+.me-content1{
+    font-size: 0.8em;
+    line-height: 1.6;
+    margin-bottom: 10px;
+
+}
+.me-content2{
+    font-size: 0.8em;
+    line-height: 1.6;
+    margin: auto;
+}
+.dog-pic{
+     float: left;
+     margin:margin-right: 20px;
+}
+.red-text {
+            color: red;
+            font-style: italic;
+        }
+
+figcaption {
+    height: 100px; 
+    text-align: center; 
+    font-style: italic; 
+    color: #555; 
+    margin-top: 3px; 
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*here is the about me page coding!!!!!!!!!!! End!!!!!!!!!!*/

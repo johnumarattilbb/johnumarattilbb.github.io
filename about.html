@@ -27,9 +27,46 @@
         </ul>
     </nav>
     <main>
-        <h2>About</h2>
-        <p>This page is currently empty.</p>
+        <h2>About me</h2>
+        <div class="me-content">
+        <p>What can I tell you? I am the product of a happy and relatively uneventful childhood in Cleveland, Ohio (back when the Indians were still a lousy team, and before they became a really good team and then again became a somewhat lousy team, although I have hope again…) This was followed by a happy and relatively squandered college career at the University of Michigan in Ann Arbor (back when Ann Arbor hosted a Hash Bash every spring). I studied literature and history and always dreamed of being a writer, but had no idea of how you went about being a writer – or at least the kind of writer I wanted to be: someone who wrote long stories about interesting things, rather than news stories about short-lived events. There is no guidebook to becoming that kind of writer, so I assumed I’d end up doing something practical like going to law school, much as the thought of it made me cringe. After college, I moved to Portland, Oregon (back when Portland was cappuccino-free) to kill some time before the inevitable trek to law school – and amazingly enough I lucked into a writing job at a tiny now-defunct monthly magazine. That led to a job at an alternative newsweekly in Portland where I wrote music reviews and feature pieces. While I was in Portland, Mt. St. Helens erupted; I started writing for<em> Rolling Stone and the Village Voice</em>; I learned to cross-country ski; I failed to learn how to cook.</p>
+        </div>
+         <div class="dog-pic">
+            <figure>
+            <img src="Dog.jpg" width="300" height="auto">
+            <figcaption id="dog-scri">He was the most handsome dog in the world.</figcaption>
+            </figure>
+        </div>
+    <div class=content-right>
+        <div class=me-content1>
+        <p>I moved to Boston in 1982 (back before they built the Ted Williams Tunnel and long before the Red Sox reversed the curse). I wrote for the Boston Phoenix and the Boston Globe, and started work on my first book,<span class=red-text>Saturday Night.</span>Four years later I moved to New York. I learned how to order take-out food; wrote <span class=red-text>The Orchid Thief</span>; became a staff writer at The New Yorker; got married. A few years ago, we moved to Los Angeles—kind of by accident, but, as it turns out, a happy accident, and for the time being we’re staying put. </p>
+        </div>
+        </p>
+       
+
+
+        <div class=me-content2>
+        <p>These days, I spend most of my time writing for The New Yorker and working on books. My side projects? I do a weekly column for Medium, run a book club on Literati, have lots of speaking engagements, and do some television writing, including a stint on How to With John Wilson (HBO) and the forthcoming adaptation of The Library Book. </p>
+        </div>
+    </div>
+
     </main>
+
+    <script>
+        var haha=document.querySelector("#dog-scri")
+
+        haha.addEventListener("mouseover",changetodetail)
+        haha.addEventListener("mouseout",backtoback)
+
+        function changetodetail(){
+            haha.textContent="His name was Cooper and in this picture he’s three years old. He was my first Welsh Springer Spaniel. Cooper topped out at about forty-nine pounds; he enjoyed swimming, eating plastic, sitting on top of the newspaper while I was reading it, and roast chicken. He is dearly missed. I now keep company with another Welshie (the delightful Ivy) and a Smooth Fox Terrier (the devilish but also delightful Buck) and a very tolerant cat (Leo)."
+            
+        }
+
+        function backtoback(){
+            haha.textContent="He was the most handsome dog in the world."
+        }
+    </script>
     <footer>
         Copyright © 2024 Susan Orlean
     </footer>
