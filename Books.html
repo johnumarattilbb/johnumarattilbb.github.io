@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Susan Orlean's Books</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .events {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .book-item {
+            position: relative;
+            width: 250px;
+            cursor: pointer;
+            text-align: center;
+            border: 1px solid #ddd;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .book-item:hover {
+            transform: scale(1.05);
+        }
+
+        .book-title {
+            color: #bb271a;
+            font-weight: bold;
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+
+        .book-image {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        /* Popup style */
+        .book-info {
+            display: none;
+            background-color: #f8f8f8;
+            padding: 10px;
+            border: 1px solid #bb271a;
+            position: absolute;
+            bottom: 100%; /* Position above the book item */
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100%;
+            box-sizing: border-box;
+            z-index: 1;
+            border-radius: 8px;
+        }
+
+        /* Display the popup on hover */
+        .book-item:hover .book-info {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-title">
+            <h1>susan orlean</h1>
+            <p id="title-desc">always leaves room for jello.</p>
+        </div>
+    </header>
+        <nav>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="books.html">BOOKS</a></li>
+            <li><a href="articles.html">ARTICLES</a></li>
+            <li><a href="events.html">EVENTS</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="events">
+            <article class="book-item">
+                <img src="The_Library_Book.jpg" alt="The Library Book" class="book-image">
+                <h2 class="book-title">The Library Book</h2>
+                <p class="article-date">Published in 2024</p>
+                <div class="book-info">
+                    <p>A narrative about the history of libraries, Susan’s childhood library visits, and an investigation into the largest library fire in U.S. history.</p>
+                </div>
+            </article>
+            
+            <article class="book-item">
+                <img src="On_Animals.jpg" alt="On Animals" class="book-image">
+                <h2 class="book-title">On Animals</h2>
+                <p class="article-date">Published in 2021</p>
+                <div class="book-info">
+                    <p>A collection of stories that showcase animals' unique roles, from movie stars to heroes, and how humans interact with the animal world.</p>
+                </div>
+            </article>
+
+            <article class="book-item">
+                <img src="Rin_Tin_Tin.jpg" alt="Rin Tin Tin" class="book-image">
+                <h2 class="book-title">Rin Tin Tin</h2>
+                <p class="article-date">Published in 2011</p>
+                <div class="book-info">
+                    <p>The biography of Rin Tin Tin, the famous German Shepherd, covering his journey from World War I to Hollywood fame.</p>
+                </div>
+            </article>
+
+            <article class="book-item">
+                <img src="Saturday_Night.jpg" alt="Saturday Night" class="book-image">
+                <h2 class="book-title">Saturday Night</h2>
+                <p class="article-date">Published in 1990</p>
+                <div class="book-info">
+                    <p>An exploration of what Saturday night means to different communities across the United States, examining traditions and social rituals.</p>
+                </div>
+            </article>
+
+            <article class="book-item">
+                <img src="Lazy_Little_Loafers.jpg" alt="Lazy Little Loafers" class="book-image">
+                <h2 class="book-title">Lazy Little Loafers</h2>
+                <p class="article-date">Published in 2008</p>
+                <div class="book-info">
+                    <p>A humorous take on how babies seem to “get away with everything,” written with a playful, slightly churlish tone.</p>
+                </div>
+            </article>
+
+            <article class="book-item">
+                <img src="The_Orchid_Thief.jpg" alt="The Orchid Thief" class="book-image">
+                <h2 class="book-title">The Orchid Thief</h2>
+                <p class="article-date">Published in 1998</p>
+                <div class="book-info">
+                    <p>The story of John Laroche, a plant dealer, and his obsession with rare orchids, set against the backdrop of Florida swamps.</p>
+                </div>
+            </article>
+
+            <article class="book-item">
+                <img src="The_Bullfighter_Checks_Her_Makeup.jpg" alt="The Bullfighter Checks Her Makeup" class="book-image">
+                <h2 class="book-title">The Bullfighter Checks Her Makeup</h2>
+                <p class="article-date">Published in 2001</p>
+                <div class="book-info">
+                    <p>A collection of Susan’s favorite profiles, ranging from famous figures to everyday people, capturing unique personalities and stories.</p>
+                </div>
+            </article>
+
+            <article class="book-item">
+                <img src="My_Kind_Of_Place.jpg" alt="My Kind of Place" class="book-image">
+                <h2 class="book-title">My Kind of Place</h2>
+                <p class="article-date">Published in 2004</p>
+                <div class="book-info">
+                    <p>A collection of place-centered essays, highlighting the distinctive essence of each location and the stories that unfold within them.</p>
+                </div>
+            </article>
+
+            <article class="book-item">
+                <img src="Red_Sox_and_Bluefish.jpg" alt="Red Sox and Bluefish" class="book-image">
+                <h2 class="book-title">Red Sox and Bluefish</h2>
+                <p class="article-date">Published in the late 1980s</p>
+                <div class="book-info">
+                    <p>A series of columns about New England’s quirks and culture, exploring local idiosyncrasies and traditions.</p>
+                </div>
+            </article>
+            
+            <article class="book-item">
+                <img src="Throw_Me_A_Bone.jpg" alt="Throw Me a Bone" class="book-image">
+                <h2 class="book-title">Throw Me a Bone</h2>
+                <p class="article-date">Published in 2007</p>
+                <div class="book-info">
+                    <p>A cookbook co-written with Susan’s dog, celebrating the fun and food shared between humans and their canine companions.</p>
+                </div>
+            </article>
+        </section>
+    </main>
+</body>
+        <footer>
+        Copyright © 2024 Susan Orlean
+    </footer>
+</html>
