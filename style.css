@@ -138,36 +138,25 @@ para p {
     line-height: 1.6;
     margin-top: 20px;
     margin-bottom: 20px;
+}
 
-}
-.me-content1{
-    font-size: 0.8em;
-    line-height: 1.6;
-    margin-bottom: 10px;
-
-}
-.me-content2{
-    font-size: 0.8em;
-    line-height: 1.6;
-    margin: auto;
-}
 .dog-pic{
+     width: 300px;
      float: left;
-     margin:margin-right: 20px;
+     margin-right: 20px;
 }
+
+.content-right{
+    float: clear;
+}
+
 .red-text {
             color: red;
             font-style: italic;
-        }
+}
 
-figcaption {
-    height: 100px; 
-    text-align: center; 
-    font-style: italic; 
-    color: #555; 
-    margin-top: 3px; 
-    transition: all 0.3s ease-in-out;
-    overflow: hidden;
+#TheLB{
+    font-style: italic;
 }
 
 footer {
