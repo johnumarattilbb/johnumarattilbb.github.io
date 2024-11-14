@@ -144,10 +144,13 @@ para p {
      width: 300px;
      float: left;
      margin-right: 20px;
+     font-size: 0.5em;
+
 }
 
 .content-right{
     float: clear;
+    font-size: 0.8em;
 }
 
 .red-text {
