@@ -18,11 +18,11 @@ var titles=document.querySelectorAll(".article-title");
 setTimeout(contentChange1,5000);
 setTimeout(contentChange2,10000);
 setTimeout(contentChange3,15000);
-link.addEventListener("mouseover",titleBlack);
-link.addEventListener("mouseout",titleRed);
+link.addEventListener("mouseover",mouseOver);
+link.addEventListener("mouseout",mouseOut);
 titles.forEach(function(title) {
-    title.addEventListener("mouseover", titleBlack);
-    title.addEventListener("mouseout", titleRed);
+    title.addEventListener("mouseover", mouseOver);
+    title.addEventListener("mouseout", mouseOut);
 });
 
 //function definitions (step 2)//
@@ -35,9 +35,9 @@ function contentChange2(){
 function contentChange3(){
     header.textContent = "always leaves room for jello.";
 }
-function titleBlack(){
+function mouseOver(){
     this.style.color="#222";
 }
-function titleRed(){
+function mouseOut(){
     this.style.color = "";
 }
