@@ -75,14 +75,12 @@ main {
     padding: 30px;
 }
 
-#NY-link {
-    color: #bb271a;
-    text-decoration: none;
-}
-
 a {
     color: #bb271a;
     text-decoration: none;
+}
+p a:hover {
+    color: #222;
 }
 
 article {
@@ -161,14 +159,66 @@ para p {
 #TheLB{
     font-style: italic;
 }
-
-footer {
-    width: 100%;
-    text-align: center;
-    padding: 20px;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 /*here is the about me page coding!!!!!!!!!!! End!!!!!!!!!!*/
+
+/*book page css*/
+
+.shelf {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.book-item {
+    position: relative;
+    width: 250px;
+    cursor: pointer;
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.book-item:hover {
+    transform: scale(1.05);
+}
+
+.book-title {
+    color: #bb271a;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+.book-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* Popup style */
+.book-info {
+    display: none;
+    background-color: #f8f8f8;
+    padding: 10px;
+    border: 1px solid #bb271a;
+    position: absolute;
+    bottom: 100%; /* Position above the book item */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 1;
+    border-radius: 8px;
+}
+
+/* Display the popup on hover */
+.book-item:hover .book-info {
+    display: block;
+}
+
+/*book page css*/
