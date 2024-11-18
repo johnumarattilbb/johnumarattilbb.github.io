@@ -3,10 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< HEAD
+    <title>Susan Orlean's Books</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .events {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .book-item {
+            position: relative;
+            width: 250px;
+            cursor: pointer;
+            text-align: center;
+            border: 1px solid #ddd;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .book-item:hover {
+            transform: scale(1.05);
+        }
+
+        .book-title {
+            color: #bb271a;
+            font-weight: bold;
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+
+        .book-image {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        /* Popup style */
+        .book-info {
+            display: none;
+            background-color: #f8f8f8;
+            padding: 10px;
+            border: 1px solid #bb271a;
+            position: absolute;
+            bottom: 100%; /* Position above the book item */
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100%;
+            box-sizing: border-box;
+            z-index: 1;
+            border-radius: 8px;
+        }
+
+        /* Display the popup on hover */
+        .book-item:hover .book-info {
+            display: block;
+        }
+    </style>
+=======
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <title>Susan Orlean's Books</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
+>>>>>>> parent of 384b400 (Delete Books.html)
 </head>
 <body>
     <header>
@@ -26,7 +90,11 @@
         </ul>
     </nav>
     <main>
+<<<<<<< HEAD
+        <section class="events">
+=======
         <section class="shelf">
+>>>>>>> parent of 384b400 (Delete Books.html)
             <article class="book-item">
                 <a href="The_Library_Book.html">
                     <img src="The_Library_Book.jpg" alt="The Library Book" class="book-image">
