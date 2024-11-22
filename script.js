@@ -16,6 +16,7 @@ var titles=document.querySelectorAll(".article-title");
 
 var haha=document.querySelector("#dog-scri");
 
+
 //event listeners (step 3)//
 setTimeout(contentChange1,5000);
 setTimeout(contentChange2,10000);
@@ -52,3 +53,4 @@ function mouseOut(){
         this.textContent="Yes, he was the most handsome dog in the world."
     }
 }
+/* EventLinstener for Contact page*/

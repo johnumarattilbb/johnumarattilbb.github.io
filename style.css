@@ -227,3 +227,58 @@ para p {
 }
 
 /*book page css*/
+
+/*contact page css start here!!!!!!!!!!!*/
+.contactme1{
+    float: right;
+    margin-left: 20px;
+    width: 400px;
+}
+.contactme8{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+    
+}
+.contactme8 img{
+    width: calc(50% - 10px);
+    height: 200; 
+    border: none;
+}
+.contactme8 a{
+    display: block;
+    width: calc(50% - 10px);
+}
+.contactme8 a img{
+    width: 100%;
+}
+#contactme2{
+    text-align: center;
+    color: gray;
+    font-size: 0.1em;
+}
+.contactme3{
+    line-height: 2.7;
+}
+.contactme4{
+    font-style: italic;
+    font-size: 1.2em;
+}
+.contactme5{
+    font-style: italic;
+    font-size: 1.2em;
+}
+.contactme6{
+    font-style: italic;
+    font-size: 1.2em;
+}
+.contactme7{
+    font-style: italic;
+    font-size: 1.2em;
+}
+
+.Largertext{
+    font-size: 1.1em;
+}
