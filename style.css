@@ -29,6 +29,11 @@ header {
     color: antiquewhite;
     text-align: center;
 }
+.header-title{
+    transform: scale(1.0);
+    opacity: 1;
+    transition: transform 0.5s, opacity0.5s;
+}
 
 .header-title h1 {
     font-size: 2em;
@@ -44,6 +49,7 @@ nav {
     max-width: 900px;
     margin: 0 auto;
     padding: 30px 0;
+    transition: transform 0.5s, opacity 0.5s;
 }
 
 ul {

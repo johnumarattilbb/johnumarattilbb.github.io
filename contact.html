@@ -8,7 +8,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <title>Contact Me</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
@@ -71,5 +70,43 @@
     <footer>
         Copyright © 2024 Susan Orlean
     </footer>
+    <script>
+        var headerTitle=document.querySelector(".header-title")
+        var nav=document.querySelector("nav")
+
+
+        window.addEventListener("scroll",changesize)
+
+
+        function changesize(){
+            var scrollTop = window.scrollY;
+            if(scrollTop>200){
+                headerTitle.style.transform="scale(0.8)"
+                headerTitle.style.opacity="0.8"
+                headerTitle.style.transition="transform 0.5s,opacity 0.5s"
+            }
+            else{
+                headerTitle.style.transform = 'scale(1)';
+                headerTitle.style.opacity = '1';
+            }
+            if (nav) {
+                if (scrollTop > 100) {
+                nav.style.transform = "scale(0.95)";
+                nav.style.opacity = "0.9";
+                nav.style.transition = "transform 0.5s, opacity 0.5s";
+            } 
+            else {
+                nav.style.transform = "scale(1)";
+                nav.style.opacity = "1";
+            }
+        }
+    }
+
+
+
+
+
+
+    </script>
 </body>
 </html>
