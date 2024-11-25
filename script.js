@@ -84,3 +84,4 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
 });
+    /* Eventlinstener for Buybooks page*/
