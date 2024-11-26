@@ -82,4 +82,53 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
 });
-    /* Eventlinstener for Buybooks page*/
+    /* Eventlinstener for Purchase page*/
+var books=document.querySelectorAll(".book-item1")
+var cart=document.getElementById("cart")
+var cartTotalElement=document.getElementById("cart-total")
+var checkoutButton=document.getElementById("checkout-button")
+var cartTotal=0 
+
+
+books.forEach(function(book){
+    book.addEventListener("dragstart",handleDragStart)
+    book.addEventListener("dragend",handleDragEnd)
+})
+cart.addEventListener("dragover",handleDragOver)
+cart.addEventListener("dragleave",handleDragLeave)
+cart.addEventListener("drop",handleDrop)
+checkoutButton.addEventListener("click",handleCheckButton)
+
+function handleDragStart(event){
+    event.dataTransfer.setData('text/plain', this.getAttribute('data-price'));//get the price into the drag item
+    this.style.opacity="0.5"
+}
+function handleDragEnd(){
+    this.style.opacity="1.0"
+}
+function handleDragOver(event){
+    event.preventDefault()
+    cart.classList.add("drag-over")
+}
+function handleDragLeave(){
+     cart.classList.remove('drag-over')
+}
+function handleDrop(event) {
+    event.preventDefault()
+    cart.classList.remove('drag-over')
+     var price = parseFloat(event.dataTransfer.getData('text/plain'))//get the price from the drag item and transfer it into number
+     if (!isNaN(price)) {
+        cartTotal += price
+        cartTotalElement.textContent = cartTotal.toFixed(2)//xiao shu dian
+    }
+}
+function handleCheckButton(){
+    if (cartTotal>0) {
+        alert(`Payment Successful! Total paid: $${cartTotal.toFixed(2)}`)
+        cartTotal=0
+        cartTotalElement.textContent = cartTotal.toFixed(2)
+    }
+    else{
+        alert("Your cart is empty. Please add items before proceeding to payment.")
+    }
+}
