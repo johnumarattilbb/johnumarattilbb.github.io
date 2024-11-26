@@ -23,8 +23,6 @@ document.addEventListener('DOMContentLoaded', function() {
     setTimeout(contentChange1,5000);
     setTimeout(contentChange2,10000);
     setTimeout(contentChange3,15000);
-    //link.addEventListener("mouseover",mouseOver);
-    //link.addEventListener("mouseout",mouseOut);
     titles.forEach(function(title) {
         title.addEventListener("mouseover",mouseOver);
         title.addEventListener("mouseout",mouseOut);
