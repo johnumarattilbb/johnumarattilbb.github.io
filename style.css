@@ -234,7 +234,7 @@ para p {
 
 /*book page css*/
 
-/*contact page css start here!!!!!!!!!!!*/
+/*contact page css start here!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 .contactme1{
     float: right;
     margin-left: 20px;
@@ -288,7 +288,8 @@ para p {
 .Largertext{
     font-size: 1.1em;
 }
-/* This is Purchase page */
+/*contact page css end here!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+/* This is Purchase page !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 .books,.cart{
     border: 10px solid;
     border-color: darkred;
@@ -350,3 +351,4 @@ para p {
 #checkout-button:hover {
     background-color:lightyellow;
 }
+/* This is Purchase page end !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/

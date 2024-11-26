@@ -132,3 +132,4 @@ function handleCheckButton(){
         alert("Your cart is empty. Please add items before proceeding to payment.")
     }
 }
+/* Eventlinstener for Purchase page end !!!!!*/
